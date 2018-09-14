@@ -25,7 +25,7 @@ function sumRecursion(nums) {
   if (nums.length === 0) {
     return 0;
   }
-  number = nums[0] + sumRecursion(nums.slice(1, nums.length));
+  number = nums[0] + sumRecursion(nums.slice(1, nums.length)); // slice will grab the rest of the array
   return number;
 }
 console.log(sumRecursion(testNums));
